@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: spring-boot-app
-        image: ranniuser/ultimate-cicd:6
+        image: exploreGi/ultimate-cicd:6
         ports:
         - containerPort: 8080
