@@ -55,6 +55,7 @@ pipeline {
                 sh '''
                     git config user.email "rajani.xyz@gmail.com"
                     git config user.name "Rajani"
+                    git checkout main
                     BUILD_NUMBER=${BUILD_NUMBER}
                     sed -i "s|ranniuser/ultimate-cicd:[^ ]*|ranniuser/ultimate-cicd:${BUILD_NUMBER}|" java-maven-sonar-argocd-helm-k8s/spring-boot-app-manifests/deployment.yml
                     git add java-maven-sonar-argocd-helm-k8s/spring-boot-app-manifests/deployment.yml
